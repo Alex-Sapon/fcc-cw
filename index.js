@@ -19,3 +19,16 @@ console.log(disemvowel("This website is for losers LOL!"));
 // ----------------------------------------
 stringToNumber = str => Number(str);
 console.log(stringToNumber("1234"));
+// -----------------------------------
+DNAtoRNA = dna => dna.replace(/T/g, 'U');
+console.log(DNAtoRNA("GCAT"));
+// ----------------------------------
+summation = num => {
+    let res = 0;
+    for (let i = 1; i <= num; i++) {
+        res += i;
+    }
+    return res;
+};
+console.log(summation(8));
+// ----------------------------------
