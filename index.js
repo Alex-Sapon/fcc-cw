@@ -32,3 +32,12 @@ summation = num => {
 };
 console.log(summation(8));
 // ----------------------------------
+const check = (a, x) => a.includes(x);
+
+check([66, 101], 66);
+console.log(check);
+// ---------------------------
+const areYouPlayingBanjo = name => name.match(/^r/i) ? `${name} plays banjo` : `${name} does not play banjo`;
+
+console.log(areYouPlayingBanjo("bravo"))
+console.log(areYouPlayingBanjo("Ringo"))
