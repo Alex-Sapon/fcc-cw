@@ -5,6 +5,32 @@ myStr += "This is the second sentence.";
 // ----------------------------------------
 const myName = "Alex";
 const myStr2 = "Hello, my name is " + myName + ", how are you?";
+// ------------------------------------
+let lastNameLength = 0;
+const lastName = "Lovelace";
+lastNameLength = lastName.length;
+// -----------------------------------
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+firstLetterOfLastName = lastName[0];
+// -------------------------------------
+const lastName = "Lovelace";
+
+const thirdLetterOfLastName = lastName[2];
+// ------------------------
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+console.log(wordBlanks = myAdjective + " " + myNoun + " " + myAdverb + " " + myVerb);
+
+
+
+
+
+
 
 
 
@@ -39,14 +65,14 @@ console.log(check);
 // ---------------------------
 const areYouPlayingBanjo = name => name.match(/^r/i) ? `${name} plays banjo` : `${name} does not play banjo`;
 
-console.log(areYouPlayingBanjo("bravo"))
-console.log(areYouPlayingBanjo("Ringo"))
+console.log(areYouPlayingBanjo("bravo"));
+console.log(areYouPlayingBanjo("Ringo"));
 // -----------------------------------
 const removeChar = str => str.slice(1, -1);
 console.log(removeChar('Alex'))
 // --------------------------------
-const noSpace = x => x.replace(/ /g, '')
-console.log(noSpace('A l ex '))
+const noSpace = x => x.replace(/ /g, '');
+console.log(noSpace('A l ex '));
 // ----------------------------------
 const countSheep = num => {
     let str = '';
@@ -56,3 +82,7 @@ const countSheep = num => {
     return str;
 }
 console.log(countSheep(2))
+// ----------------------------------
+const smash = words => words.join(' ');
+
+console.log(smash(["hello", "world"]));
