@@ -41,3 +41,18 @@ const areYouPlayingBanjo = name => name.match(/^r/i) ? `${name} plays banjo` : `
 
 console.log(areYouPlayingBanjo("bravo"))
 console.log(areYouPlayingBanjo("Ringo"))
+// -----------------------------------
+const removeChar = str => str.slice(1, -1);
+console.log(removeChar('Alex'))
+// --------------------------------
+const noSpace = x => x.replace(/ /g, '')
+console.log(noSpace('A l ex '))
+// ----------------------------------
+const countSheep = num => {
+    let str = '';
+    for (let i = 0; i < num; i++) {
+        str += `${i + 1} sheep...`;
+    }
+    return str;
+}
+console.log(countSheep(2))
