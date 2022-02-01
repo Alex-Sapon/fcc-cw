@@ -93,3 +93,39 @@ const descendingOrder = n => {
 
 console.log(descendingOrder(145263));
 // ----------------------------------------
+const friend = friends => friends.filter(friend => friend.length === 4)
+
+console.log(friend(["Ryan", "Kieran", "Mark"]))
+console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"]))
+console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]))
+// -----------------------------------------
+const betterThanAverage = (classPoints, yourPoints) => {
+    const sum = Math.round(classPoints.reduce((acc, item) => acc + item, 0) / classPoints.length);
+    if (sum < yourPoints) return true
+    return false
+}
+
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75))
+// --------------------------------
+const min = list => Math.min(...list);
+
+const max = list => Math.max(...list);
+
+console.log(min([-52, 56, 30, 29, -54, 0, -110]))
+console.log(max([4,6,2,1,9,63,-134,566]))
+// ----------------------------
+const filter_list = l => l.filter(item => typeof item === typeof Number())
+
+console.log(filter_list([1,2,'a','b']))
+// ----------------------------
+const uniqueInOrder = iterable => {
+    let arr = []
+    for (let i = 0; i < iterable.length; i++) {
+        if (iterable[i] !== iterable[i + 1]) {
+            arr.push(iterable[i])
+        }
+    }
+    return arr
+}
+
+console.log(uniqueInOrder('ABBCcAD'))
