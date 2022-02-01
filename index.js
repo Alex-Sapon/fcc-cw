@@ -86,3 +86,10 @@ console.log(countSheep(2))
 const smash = words => words.join(' ');
 
 console.log(smash(["hello", "world"]));
+// ---------------------------
+const descendingOrder = n => {
+    return +[...'' + n].map(Number).sort((a, b) => b - a).join('')
+};
+
+console.log(descendingOrder(145263));
+// ----------------------------------------
