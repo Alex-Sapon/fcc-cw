@@ -134,3 +134,20 @@ const getCount = str => (str.match(/[aeiou]/ig) || []).length;
 
 console.log(getCount("abracadabra"))
 console.log(getCount("br"))
+// -----------------------------
+const arr1 = [1, 2, 3, 4, 5]
+const arr2 = [5, 3, 2, 1, 4]
+const arr3 = [2]
+const arr4 = []
+
+const removeSmallest = numbers => {
+    const copyArr = numbers.slice()
+    copyArr.length >= 1 ? copyArr.splice(copyArr.indexOf(Math.min(...copyArr)), 1) : copyArr.length === 0 ? [] : copyArr;
+    return copyArr
+};
+
+console.log(removeSmallest(arr1))
+console.log(removeSmallest(arr2))
+console.log(removeSmallest(arr3))
+console.log(removeSmallest(arr4))
+// -----------------------------
