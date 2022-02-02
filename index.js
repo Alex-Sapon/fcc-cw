@@ -129,3 +129,8 @@ const uniqueInOrder = iterable => {
 }
 
 console.log(uniqueInOrder('ABBCcAD'))
+// -------------------------------
+const getCount = str => (str.match(/[aeiou]/ig) || []).length;
+
+console.log(getCount("abracadabra"))
+console.log(getCount("br"))
