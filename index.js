@@ -162,3 +162,17 @@ const squareDigits = num => +[...'' + num].map(Number).reduce((acc, item) => acc
 console.log(squareDigits(3212))
 console.log(squareDigits(2112))
 // -------------------------------------
+const number = busStops => busStops.reduce((acc,item) => (acc + item[0]) - item[1] > 0 ? (acc + item[0]) - item[1] : 0, 0) 
+
+console.log(number([[10,0],[3,5],[5,8]]));
+console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]));
+console.log(number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]));
+console.log(number([[0,0]]));
+// -----------------------
+const abbrevName = name => {
+    const nameUser = name.split(' ')
+    return `${nameUser[0][0].toUpperCase()}.${nameUser[1][0].toUpperCase()}`
+}
+
+console.log(abbrevName("Sam Harris"))
+// -------------------------------
