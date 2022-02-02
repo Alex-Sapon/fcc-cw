@@ -151,3 +151,14 @@ console.log(removeSmallest(arr2))
 console.log(removeSmallest(arr3))
 console.log(removeSmallest(arr4))
 // -----------------------------
+const sumMix = x => x.reduce((acc, item) => acc + Number(item), 0)
+
+console.log(sumMix([9, 3, '7', '3']));
+console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7])); 
+console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']));
+// -----------------------------------
+const squareDigits = num => +[...'' + num].map(Number).reduce((acc, item) => acc + Math.pow(item, 2), '')
+
+console.log(squareDigits(3212))
+console.log(squareDigits(2112))
+// -------------------------------------
