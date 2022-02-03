@@ -183,3 +183,16 @@ console.log(feast("chickadee", "chocolate cake"))
 console.log(feast("brown bear", "bear claw"))
 // --------------------------------
 const booleanToString = b => String(b);
+// -----------------------
+const repeatStr = (n, s) => s.repeat(n) 
+
+console.log(repeatStr(3, "*")); // , "***"
+console.log(repeatStr(5, "#")); // , "#####"
+console.log(repeatStr(2, "ha ")); // , "ha ha "
+// -------------------
+const solution = str => str.split('').reverse().join('')
+
+console.log(solution('world'));
+console.log(solution('hello'));
+console.log(solution(''));
+console.log(solution('h'));
