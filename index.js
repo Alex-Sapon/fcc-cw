@@ -212,3 +212,19 @@ const solution = string => string.replace(/([A-Z])/g, ' $1');
 console.log(solution('camelCasing'))
 console.log(solution('camelCasingTest'))
 // ---------------------
+const highAndLow = numbers => {
+    const num = numbers.split(' ').map(Number)
+    return `${Math.max(...num)} ${Math.min(...num)}`
+}
+
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")); // "42 -9"
+// --------------------------
+const invert = array => {
+    return array.map(item => item < 0 ? item * (-1) : item * -1) // 
+}
+
+console.log(invert([1,2,3,4,5])); // , [-1,-2,-3,-4,-5]
+console.log(invert([1,-2,3,-4,5])); // , [-1,2,-3,4,-5]
+console.log(invert([])); // , []
+console.log(invert([0])); // , [-0]
+// -----------------------------------
