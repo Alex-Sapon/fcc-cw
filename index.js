@@ -228,3 +228,17 @@ console.log(invert([1,-2,3,-4,5])); // , [-1,2,-3,4,-5]
 console.log(invert([])); // , []
 console.log(invert([0])); // , [-0]
 // -----------------------------------
+const hero = (bullets, dragons) => bullets / dragons >= 2 ? true : false;
+
+console.log(hero(10, 5)); // , true
+console.log(hero(7, 4)); // , false
+console.log(hero(4, 5)); // , false
+console.log(hero(100, 40)); // , true
+console.log(hero(1500, 751)); // , false
+console.log(hero(0, 1)); // , false
+// ---------------------------
+const squareSum = numbers => numbers.reduce((acc, item) => acc + Math.pow(item, 2), 0)
+
+console.log(squareSum([1,2])) // , 5
+console.log(squareSum([0, 3, 4, 5])) // , 50
+console.log(squareSum([])) // , 0
