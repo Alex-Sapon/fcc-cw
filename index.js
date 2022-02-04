@@ -206,3 +206,9 @@ const reverseSeq = n => {
 };
 
 console.log(reverseSeq(5));
+// ------------------
+const solution = string => string.replace(/([A-Z])/g, ' $1');
+
+console.log(solution('camelCasing'))
+console.log(solution('camelCasingTest'))
+// ---------------------
