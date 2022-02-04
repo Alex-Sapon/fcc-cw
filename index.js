@@ -196,3 +196,13 @@ console.log(solution('world'));
 console.log(solution('hello'));
 console.log(solution(''));
 console.log(solution('h'));
+// ----------------
+const reverseSeq = n => {
+    const result = [];
+    for (let i = n; i >= 1; i--) {
+        result.push(i)
+    }
+    return result;
+};
+
+console.log(reverseSeq(5));
